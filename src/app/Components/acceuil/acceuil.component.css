@@ -1,0 +1,299 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Oswald', sans-serif;
+}
+.alert {
+    position: fixed;
+    top: 5%;
+    right: 2%;
+    background: rgb(255,250,245);
+    color: #fff;
+    font-weight: 800;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 20px;
+    width: 300px;
+    height: 100vh;
+    border-radius: 10px;
+    transform: translateX(150%);
+    transition: transform 0.3s ease-in-out;
+}
+body
+{
+    background: rgb(255,250,245);
+}
+.banner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    background: rgb(255,250,245);
+    background: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)),url(https://i.postimg.cc/VkpVCG6G/summertime-hazards-cats-dogs.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+    margin: 0px 80px;
+}
+header
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 20px 60px;
+    background: rgb(255,250,245);
+    position: fixed;
+    border-bottom: 1px solid #aaa;
+}
+
+header .logo
+{
+    color: rgb(48,47,81);
+    font-weight: bold;
+    font-size: 2.5em;
+    text-decoration: none;
+}
+header ul
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 60px;
+    list-style: none;
+}
+header .navigation li a
+{
+    text-decoration: none;
+    color: rgb(48,47,81);
+    transition: .5s;
+}
+header .navigation li a:hover{
+    color: rgb(153, 150, 252);
+}
+.banner .title
+{
+    max-width: 900px;
+    text-align: left;
+}
+.banner .title h1
+{
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+    letter-spacing: 3px;
+}
+.btn
+{
+    padding: 20px 30px;
+    color: #fff;
+    text-decoration: none;
+    background: rgb(244,195,91);  
+    margin-top: 30px;
+    font-weight: 300;
+    transition: .5s;
+}
+.btn:hover
+{
+    background: rgb(91, 89, 151);
+}
+section
+{
+    padding: 100px 0;
+}
+
+.title h2
+{
+    font-size: 2.2em;
+    color: rgb(48,47,81);
+}
+.title p
+{
+    font-size: 1.2em;
+}
+.sall
+{
+    text-decoration: none;
+    color: rgb(48,47,81);
+    border: 2px solid rgb(48,47,81);
+    padding: 5px 30px;
+    transition: .5s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sall:hover
+{
+    background: rgb(48,47,81);
+    color: #fff;
+}
+.about .line
+{   
+    width: 100px;
+    border-top: 1px solid black;
+}
+.about
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about .title h2
+{
+    margin-bottom: 50px;
+}
+.imgtext
+{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+.imgtext img
+{
+    height: 110vh;
+    background-size: cover;
+    width: 100%;
+}
+.imgtext .info
+{
+    position: absolute;
+    background: rgb(244,195,91);
+    height: 100%;
+    opacity: .90;
+    right:  100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    padding: 110px;
+    color: rgb(48,47,81);
+}
+.imgtext .info .infocontent 
+{
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(48,47,81);
+}
+.imgtext .info .infocontent h3
+{
+    font-size: 2em;
+}
+.imgtext .info .infocontent p
+{
+    font-style: italic;
+    padding: 10px 0;
+}
+.review .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container .bbox {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container .cbox2 {
+    background: #857C48;
+    color: #fff;
+}
+
+.container .cbox2 h1 {
+    padding: 10px;
+}
+
+.container .cbox4 {
+    background: #57557D;
+    color: #fff;
+}
+
+.container .cbox4 .boxdetail {
+    padding: 20px;
+    text-align: center;
+}
+
+.container .cbox5 {
+    background: #FEC74F;
+    color: rgb(48, 47, 81);
+}
+
+.container .cbox5 .boxdetail {
+    padding: 20px;
+    text-align: center;
+}
+
+.container .cbox7 {
+    background: #F88D58;
+    color: rgb(48, 47, 81);
+}
+
+.container .cbox7 .boxdetail {
+    padding: 20px;
+    text-align: center;
+}
+
+.form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.form h1
+{
+    font-size: 2em;
+    color: rgb(48,47,81);
+}
+.form input
+{
+    padding: 10px 250px;
+    background: transparent;
+}
+.form button
+{
+    padding: 10px 300px;
+    color: #fff;
+    background: #F88D58;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+}

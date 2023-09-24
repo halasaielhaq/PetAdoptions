@@ -1,0 +1,142 @@
+html, body {
+	background-color: white;
+	font-family: 'system-ui', cursive;
+}
+
+/* header styling */
+
+header {
+  display: fixed;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+   background-attachment: fixed;
+}
+
+#title {
+  flex: 1;
+  margin: 3px 30% 0px 5%;
+	color: black;
+	font-size: 5.42em;
+  padding: 5px;
+  font-family: 'system-ui', cursive;
+  text-shadow: 0px 5px 15px rgb(244,195,91),
+				       0px 12px 25px black;
+  
+}
+
+#top-pic {
+  flex: 1;
+  margin-left: auto;
+  max-width: 100%;
+  display: block;
+  position: float;
+}
+
+/* main styling */
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+	color: black;
+	font-size: 1.5em;
+	border: 2px solid black;
+	margin: 0px 50px 50px 50px;
+	background-color: rgb(255, 215, 128);
+}
+
+#description {
+  flex: 1;
+  font-size: 1.1em;
+	text-align: center;
+}
+
+form, #todays-date > select, input, textarea, #dropdown {
+  flex: 1;
+	margin-left: 5px;
+	font-size: 18px;
+	font-family: 'system-ui', cursive;
+
+}
+
+.main-label {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+ form > div {
+  flex: 1;
+  align-items: center;
+ 	padding: 5px;
+  margin: 1px 5% 15px 5%;
+
+}
+
+ul { 
+	padding-left: 0px;
+}
+
+li{
+	padding: 2px 2px 2px 5px;
+	display: inline-block;
+	list-style: none;
+}
+
+textarea {
+  width: 100%;
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+}
+
+#submit {
+  color: black;
+	font-size: 2.02em;
+  font-weight: bold;
+
+  
+	font-family: 'system-ui', cursive;
+                       background-color: white;
+	padding: 15px;
+
+}
+/* above footer styling */
+
+#above-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#bottom-pic {
+  flex: 1;
+  justify-content: flex-start;
+  display: block;
+  position: float;
+  max-width: 100%;
+  margin: 1% 0% 1% 25%;
+}
+
+/* footer */
+
+#coded-by {
+  flex: 1;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 1em;
+  padding: 5px;
+  text-align: center;
+}
+
+a {
+  color: rgb(244,195,91);
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  background-color: rgb(244,195,91);
+}

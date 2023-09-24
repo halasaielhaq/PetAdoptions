@@ -1,0 +1,258 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Oswald', sans-serif;
+}
+.alert {
+    position: fixed;
+    top: 5%;
+    right: 2%;
+    background: rgb(255,250,245);
+    color: #fff;
+    font-weight: 800;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 20px;
+    width: 300px;
+    height: 100vh;
+    border-radius: 10px;
+    transform: translateX(150%);
+    transition: transform 0.3s ease-in-out;
+}
+.alert .navigation1
+{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+}
+.alert .navigation1 li a
+{
+    text-decoration: none;
+    color: #57557D;
+}
+.alert p {
+    margin: 30px;
+    letter-spacing: 1px;
+}
+
+.alert i {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    cursor: pointer;
+    color: #57557D;
+}
+body
+{
+    background: rgb(255,250,245);
+}
+.banner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    background: rgb(255,250,245);
+    background: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)),url(https://i.postimg.cc/VkpVCG6G/summertime-hazards-cats-dogs.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+    margin: 0px 80px;
+}
+header .hamburger
+{
+    display: none;
+}
+header
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 20px 60px;
+    background: rgb(255,250,245);
+    position: fixed;
+    border-bottom: 1px solid #aaa;
+}
+
+header .logo
+{
+    color: rgb(48,47,81);
+    font-weight: bold;
+    font-size: 2.5em;
+    text-decoration: none;
+}
+header ul
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 60px;
+    list-style: none;
+}
+header .navigation li a
+{
+    text-decoration: none;
+    color: rgb(48,47,81);
+    transition: .5s;
+}
+header .navigation li a:hover{
+    color: rgb(153, 150, 252);
+}
+.banner .title
+{
+    max-width: 900px;
+    text-align: left;
+}
+.banner .title h1
+{
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+    letter-spacing: 3px;
+}
+.btn
+{
+    padding: 20px 30px;
+    color: #fff;
+    text-decoration: none;
+    background: rgb(244,195,91);  
+    margin-top: 30px;
+    font-weight: 300;
+    transition: .5s;
+}
+.btn:hover
+{
+    background: rgb(91, 89, 151);
+}
+section
+{
+    padding: 100px 0;
+}
+
+.title h2
+{
+    font-size: 2.2em;
+    color: rgb(48,47,81);
+}
+.title p
+{
+    font-size: 1.2em;
+}
+.sall
+{
+    text-decoration: none;
+    color: rgb(48,47,81);
+    border: 2px solid rgb(48,47,81);
+    padding: 5px 30px;
+    transition: .5s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sall:hover
+{
+    background: rgb(48,47,81);
+    color: #fff;
+}
+/* Vos styles existants */
+
+/* Styles pour la liste des animaux */
+.animal-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+.animal {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.animal img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.animal h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.animal p {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.adoption-info {
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.adopt-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffac4b;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.adopt-btn:hover {
+    background-color: #ff6f00;
+}
+/* Vos styles existants */
+
+/* Styles pour la section des animaux */
+#animals {
+    padding: 80px 0; /* Ajoute de l'espace autour du contenu */
+    background-color: #f7f7f7; /* Une couleur de fond douce */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ff6f00; /* Couleur orangée */
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50px; /* Ajuste la position du trait décoratif */
+    transform: translateY(-50%);
+    width: 40px; /* Réduit la largeur du trait décoratif */
+    height: 3px; /* Augmente légèrement la hauteur du trait */
+    background-color: #ff6f00;
+}
+
+/* Styles pour la liste des animaux */
+.animal-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 40px; /* Ajoute de l'espace aux côtés gauche et droit */
+    justify-content: center; /* Centre les animaux horizontalement */
+}
